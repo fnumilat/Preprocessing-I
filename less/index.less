@@ -80,10 +80,25 @@ nav {
 	border-color: darkblue;
 	margin-top: -5%;
 
+	@media (max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+		background: none;
+		margin-top: -30%;
+	}
+
 	a {
 	   font-size: 30px;
 	   text-decoration: none;
 	   color: @variable-color;
+
+	   @media (max-width: 500px) {
+		   color: black;
+		   padding-bottom: 20px;
+		   text-align: center;
+		   border-bottom: black solid;
+		   padding-top: 20px;
+	   }
 	}//closing a
 }//closing nav
 
@@ -96,10 +111,23 @@ header {
 	width: 100%;
 	padding-top: 40px;
 	background: black;
+	margin-top: 2.5%;
+
+	@media (max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+		background: none;
+	}
 
 	div {
 		padding: 4px;
 		margin-left: .5%;
+		padding-top: -2%;
+
+		@media (max-width: 500px) {
+			margin-left: -20%;
+			padding-top: 7%;
+		}
 	}
 
 	img {
@@ -114,12 +142,22 @@ header {
 		color: @variable-color;
 		margin-left: 8.5%;
 		margin-bottom: 1%;
+
+		@media (max-width: 500px) {
+			color: black;
+			text-align: center;
+		}
 	}
 
 	h2 {
 		font-size: 25px;
 		color:@variable-color;
 		margin-left: 7%;
+
+		@media (max-width: 500px) {
+			color: black;
+			text-align: center;
+		}
 	}
 
 }//closing header
@@ -130,6 +168,13 @@ header {
 	margin: 2px;
 	width: 100%;
 	padding-top: 40px;
+
+	@media (max-width: 500px) {
+		display: flex;
+		width: 140%;
+		margin-left: -18%;
+		margin-top: -10%;
+	}
 
 	div {
 		padding-bottom: 4px;
@@ -145,6 +190,11 @@ header {
 	h3 {
 		font-size: 25px;
 		padding: 2px;
+		padding-top: 1%;
+
+		@media (max-width: 500px) {
+			padding-bottom: 2%;
+		}
 	}
 
 }//closing .section-1
@@ -155,6 +205,13 @@ header {
 	margin: 2px;
 	width: 100%;
 	padding-top: 40px;
+
+	@media (max-width: 500px) {
+		display: flex;
+		width: 140%;
+		margin-left: -18%;
+		margin-top: -10%;
+	}
 
 	div {
 		padding-bottom: 4px;
@@ -186,6 +243,13 @@ header {
 	margin: 2px;
 	width: 100%;
 	padding-top: 40px;
+
+	@media (max-width: 500px) {
+		display: flex;
+		width: 140%;
+		margin-left: -18%;
+		margin-top: -10%;
+	}
 
 	div {
 		padding-bottom: 4px;
@@ -222,6 +286,13 @@ footer {
 	width: 100%;
 	padding-top: 40px;
 	padding-bottom: 50px;
+
+	@media (max-width: 500px) {
+		display: flex;
+		width: 140%;
+		margin-left: -18%;
+		margin-top: -10%;
+	}
 
 	h2 {
 		font-size: 30px;

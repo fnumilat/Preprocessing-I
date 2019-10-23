@@ -154,10 +154,27 @@ nav {
   border-color: darkblue;
   margin-top: -5%;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    margin-top: -30%;
+  }
+}
 nav a {
   font-size: 30px;
   text-decoration: none;
   color: white;
+}
+@media (max-width: 500px) {
+  nav a {
+    color: black;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: black solid;
+    padding-top: 20px;
+  }
 }
 header {
   display: flex;
@@ -169,10 +186,25 @@ header {
   width: 100%;
   padding-top: 40px;
   background: black;
+  margin-top: 2.5%;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    background: none;
+  }
 }
 header div {
   padding: 4px;
   margin-left: 0.5%;
+  padding-top: -2%;
+}
+@media (max-width: 500px) {
+  header div {
+    margin-left: -20%;
+    padding-top: 7%;
+  }
 }
 header img {
   width: 380px;
@@ -186,10 +218,22 @@ header h1 {
   margin-left: 8.5%;
   margin-bottom: 1%;
 }
+@media (max-width: 500px) {
+  header h1 {
+    color: black;
+    text-align: center;
+  }
+}
 header h2 {
   font-size: 25px;
   color: white;
   margin-left: 7%;
+}
+@media (max-width: 500px) {
+  header h2 {
+    color: black;
+    text-align: center;
+  }
 }
 .section-1 {
   display: flex;
@@ -198,6 +242,14 @@ header h2 {
   margin: 2px;
   width: 100%;
   padding-top: 40px;
+}
+@media (max-width: 500px) {
+  .section-1 {
+    display: flex;
+    width: 140%;
+    margin-left: -18%;
+    margin-top: -10%;
+  }
 }
 .section-1 div {
   padding-bottom: 4px;
@@ -211,6 +263,12 @@ header h2 {
 .section-1 h3 {
   font-size: 25px;
   padding: 2px;
+  padding-top: 1%;
+}
+@media (max-width: 500px) {
+  .section-1 h3 {
+    padding-bottom: 2%;
+  }
 }
 .section-2 {
   display: flex;
@@ -219,6 +277,14 @@ header h2 {
   margin: 2px;
   width: 100%;
   padding-top: 40px;
+}
+@media (max-width: 500px) {
+  .section-2 {
+    display: flex;
+    width: 140%;
+    margin-left: -18%;
+    margin-top: -10%;
+  }
 }
 .section-2 div {
   padding-bottom: 4px;
@@ -244,6 +310,14 @@ header h2 {
   margin: 2px;
   width: 100%;
   padding-top: 40px;
+}
+@media (max-width: 500px) {
+  .section-3 {
+    display: flex;
+    width: 140%;
+    margin-left: -18%;
+    margin-top: -10%;
+  }
 }
 .section-3 div {
   padding-bottom: 4px;
@@ -274,6 +348,14 @@ footer {
   width: 100%;
   padding-top: 40px;
   padding-bottom: 50px;
+}
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    width: 140%;
+    margin-left: -18%;
+    margin-top: -10%;
+  }
 }
 footer h2 {
   font-size: 30px;
